@@ -9,6 +9,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![marvel-logo](https://github.com/fervcdev/app-marvel-library/assets/40637227/454e7d51-7c7b-4751-a0a5-df26c4f19e5f)
 
 ## Build
 
