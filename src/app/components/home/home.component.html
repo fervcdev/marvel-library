@@ -1,0 +1,26 @@
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img src="/assets/marvel.png" width="90" height="90" alt="" (click)="goHome()" class="pointer-cursor">
+    <div class="search-container mx-auto">
+      <div class="input-wrapper">
+        <input class="form-control search-input" type="search" placeholder="Search" [(ngModel)]="searchTerm" (ngModelChange)="searchCharacters($event)" />
+        <i class="fa fa-search search-icon"></i>
+      </div>
+    </div>
+    <div class="social-icons ml-auto">
+      <a href="https://www.facebook.com/Marvel" target="_blank" class="social-icon">
+        <i class="fa fa-facebook-f"></i>
+      </a>
+      <a href="https://twitter.com/Marvel" target="_blank" class="social-icon">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com/marvel/" target="_blank" class="social-icon">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="https://www.youtube.com/user/MARVEL" target="_blank" class="social-icon">
+        <i class="fa fa-youtube"></i>
+      </a>
+    </div>
+  </nav>
+  <app-character-list [searchTerm]="searchTerm"></app-character-list>
+</div>

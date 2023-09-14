@@ -1,0 +1,30 @@
+
+<div *ngIf="showSpinner" class="spinner-container">
+  <div class="spinner"></div>
+</div>
+
+<div class="card-library-container">
+  <div *ngIf="characters.length > 0 && !noResults">
+    <div class="row">
+      <div class="col-md-3" *ngFor="let character of characters">
+        <div class="card" (click)="navigateToCharacterDetail(character.id)">
+          <img [src]="character.thumbnail.path + '.' + character.thumbnail.extension" alt="{{ character.name }}" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">{{ character.name }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="noResults">
+  <p>No results found.</p>
+</div>
+
+<div *ngIf="characters.length > 0 && !noResults" class="pagination">
+  <button (click)="previousPage()" [disabled]="offset === 0" class="pagination-button-red">← Anterior</button>
+  <span class="pagination-info">{{ offset / limit + 1 }} de {{ totalPages }}</span> 
+  <button (click)="nextPage()" [disabled]="offset + limit >= total" class="pagination-button-red">Siguiente →</button>
+</div>
+

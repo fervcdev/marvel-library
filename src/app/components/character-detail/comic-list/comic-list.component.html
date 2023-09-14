@@ -1,0 +1,13 @@
+<ng-container *ngIf="items && items.length > 0; else noItems">
+  <div>
+      <h3>{{ title }}</h3>
+      <ul>
+          <li *ngFor="let item of items">{{ item }}</li>
+      </ul>
+  </div>
+</ng-container>
+<ng-template #noItems>
+  <div>
+      <p>No comics available.</p>
+  </div>
+</ng-template>

@@ -1,0 +1,82 @@
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img src="/assets/marvel.png" width="90" height="90" alt=""  (click)="goHome()" class="pointer-cursor">
+        <div class="social-icons ml-auto">
+            <a href="https://www.facebook.com/Marvel" target="_blank" class="social-icon">
+              <i class="fa fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/Marvel" target="_blank" class="social-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/marvel/" target="_blank" class="social-icon">
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/user/MARVEL" target="_blank" class="social-icon">
+              <i class="fa fa-youtube"></i>
+            </a>
+          </div>
+    </nav>
+    <div class="row">
+        <div class="col-4">
+            <ng-container *ngIf="character">
+                <ng-container *ngIf="character.thumbnail">
+                    <img [src]="imageUrl" alt="{{ character.name }}" class="card-img-top">
+                </ng-container>
+                <ng-container *ngIf="character.description; else noDescription">
+                    {{ character.description }}
+                </ng-container>
+                <ng-template #noDescription>
+                    <p>No data available.</p>
+                </ng-template>
+            </ng-container>
+        </div>
+        <div class="col-8">
+            <h1 class="text-dark display-4 font-weight-bold">{{character.name}}</h1>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link text-white" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                               Stories
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <app-story-list title="Stories" [items]="stories"></app-story-list>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link text-white collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                 Comics
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <app-comic-list title="Comics" [items]="comics"></app-comic-list>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link text-white collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                 Events
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <app-event-list title="Events" [items]="events"></app-event-list>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
