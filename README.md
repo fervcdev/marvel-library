@@ -1,3 +1,8 @@
+![marvel-logo](https://github.com/fervcdev/app-marvel-library/assets/40637227/35ee5a28-4ca3-4dd3-bd76-2286bf19fca5)
+
+
+
+
 # MarvelApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
@@ -9,8 +14,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-![marvel-logo](https://github.com/fervcdev/app-marvel-library/assets/40637227/454e7d51-7c7b-4751-a0a5-df26c4f19e5f)
-
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
