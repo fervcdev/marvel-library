@@ -1,4 +1,4 @@
-# Application navigation
+# Navigation
 
  Located on the application's home screen.
 ![Home](https://github.com/fervcdev/app-marvel-library/assets/40637227/bb4a708a-8e6f-452e-84a3-f0e7507a33f7)
