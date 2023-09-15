@@ -1,9 +1,12 @@
-#Application navigation
+# Application navigation
 
+ Located on the application's home screen
 ![Home](https://github.com/fervcdev/app-marvel-library/assets/40637227/bb4a708a-8e6f-452e-84a3-f0e7507a33f7)
 
+Typing the character you want to search for in the search bar, in this case, searching for Iron Man.
 ![iron man](https://github.com/fervcdev/app-marvel-library/assets/40637227/32e672c0-8606-4a30-96a1-72415be45c49)
 
+Accessing the character or hero, displaying their stories, comics, and events
 ![iron man - stories](https://github.com/fervcdev/app-marvel-library/assets/40637227/632e204d-a584-4f41-aa92-ba3039558e93)
 
 # MarvelApp
