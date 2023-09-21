@@ -9,6 +9,10 @@ Typing the character you want to search for in the search bar, in this case, sea
  Accessing the character or hero, displaying a brief description of them and their stories, comics, and events.
 ![iron man - stories](https://github.com/fervcdev/app-marvel-library/assets/40637227/632e204d-a584-4f41-aa92-ba3039558e93)
 
+https://github.com/fervcdev/marvel-library/assets/40637227/bba9dd4e-29c4-4354-a0f7-27ef61bc2379
+
+
+
 # MarvelApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
